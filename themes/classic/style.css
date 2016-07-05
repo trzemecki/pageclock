@@ -1,6 +1,6 @@
 #clock {
     position: relative;
-    background-image: url("../images/background.png");
+    background-image: url("background.png");
     background-repeat: no-repeat;
     height: 160px;
     width: 160px;
@@ -17,25 +17,32 @@
 }
 
 #clock div.second {
-    content: url("../images/second.png");
     -webkit-animation: spin_s 60s linear infinite;
     -moz-animation: spin_s 60s linear infinite;
     animation: spin_s 60s linear infinite;
 }
 
+#clock div.second:after {
+    content: url("second.png");
+}
 
 #clock div.minute {
-    content: url("../images/minute.png");
     -webkit-animation: spin_m 3600s linear infinite;
     -moz-animation: spin_m 3600s linear infinite;
     animation: spin_m 3600s linear infinite;
 }
 
+#clock div.minute:after {
+    content: url("minute.png");
+}
 
 #clock div.hour {
-    content: url("../images/hour.png");
+    content: url("hour.png");
     -webkit-animation: spin_h 43200s linear infinite;
     -moz-animation: spin_h 43200s linear infinite;
     animation: spin_h 43200s linear infinite;
 }
 
+#clock div.hour:after {
+    content: url("hour.png");
+}
