@@ -1,0 +1,48 @@
+#clock {
+    position: relative;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    height: 160px;
+    width: 160px;
+}
+
+#clock div {
+    position: absolute;
+    bottom: 80px;
+    left: 80px;
+    margin:0 0 0 -0px;
+    -ms-transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+
+#clock div.second {
+    -webkit-animation: spin_s 60s linear infinite;
+    -moz-animation: spin_s 60s linear infinite;
+    animation: spin_s 60s linear infinite;
+}
+
+#clock div.second:after {
+    content: url("second.png");
+}
+
+#clock div.minute {
+    -webkit-animation: spin_m 3600s linear infinite;
+    -moz-animation: spin_m 3600s linear infinite;
+    animation: spin_m 3600s linear infinite;
+}
+
+#clock div.minute:after {
+    content: url("minute.png");
+}
+
+#clock div.hour {
+    content: url("hour.png");
+    -webkit-animation: spin_h 43200s linear infinite;
+    -moz-animation: spin_h 43200s linear infinite;
+    animation: spin_h 43200s linear infinite;
+}
+
+#clock div.hour:after {
+    content: url("hour.png");
+}
