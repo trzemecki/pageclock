@@ -10,11 +10,15 @@ function rotation_css(name, start) {
 }
 
 var time = new Date();
-h_start = time.getHours() * (FULL_ANGLE / HOURS_BY_LOOP);
-m_start = time.getMinutes() * (FULL_ANGLE / MINUTES_BY_LOOP);
-s_start = time.getSeconds() * (FULL_ANGLE / SECONDS_BY_LOOP);
+start_hour = time.getHours()
+start_minute = time.getMinutes()
+start_second = time.getSeconds()
 
-css_text = rotation_css('h', h_start) + rotation_css('m', m_start) + rotation_css('s', s_start)
+rotation_hour = (start_hour + (start_minute + start_second / SECONDS_BY_LOOP) / MINUTES_BY_LOOP) * (FULL_ANGLE / HOURS_BY_LOOP);
+rotation_minute = (start_minute + start_second / SECONDS_BY_LOOP) * (FULL_ANGLE / MINUTES_BY_LOOP);
+rotation_second = start_second * (FULL_ANGLE / SECONDS_BY_LOOP);
+
+css_text = rotation_css('h', rotation_hour) + rotation_css('m', rotation_minute) + rotation_css('s', rotation_second)
 style = document.createElement('style');
 style.type = 'text/css';
 
