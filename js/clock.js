@@ -6,7 +6,7 @@ FULL_ANGLE = 360;
 
 function rotation_css(name, start) {
     end = start + FULL_ANGLE;
-    return "@-moz-keyframes spin_" + name + " {  0% {  -moz-transform: rotate(" + start + "deg) translate(-50%, 10%);  }  100% {  -moz-transform: rotate(" + end + "deg) translate(-50%, 10%);  }  } @-webkit-keyframes spin_" + name + " {  0% {  -webkit-transform: rotate(" + start + "deg) translate(-50%, 10%);  }  100% {  -webkit-transform: rotate(" + end + "deg) translate(-50%, 10%);  }  } @keyframes spin_" + name + " {  0% {  -webkit-transform: rotate(" + start + "deg) translate(-50%, 10%);  transform:rotate(" + start + "deg) translate(-50%, 10%);  }  100% {  -webkit-transform: rotate(" + end + "deg) translate(-50%, 0);  transform:rotate(" + end + "deg) translate(-50%, 10%);  }  }";
+    return "@-moz-keyframes spin_" + name + " {  0% {  -moz-transform: rotate(" + start + "deg) translate(-50%, 20%);  }  100% {  -moz-transform: rotate(" + end + "deg) translate(-50%, 20%);  }  } @-webkit-keyframes spin_" + name + " {  0% {  -webkit-transform: rotate(" + start + "deg) translate(-50%, 20%);  }  100% {  -webkit-transform: rotate(" + end + "deg) translate(-50%, 20%);  }  } @keyframes spin_" + name + " {  0% {  -webkit-transform: rotate(" + start + "deg) translate(-50%, 20%);  transform:rotate(" + start + "deg) translate(-50%, 20%);  }  100% {  -webkit-transform: rotate(" + end + "deg) translate(-50%, 30%);  transform:rotate(" + end + "deg) translate(-50%, 20%);  }  }";
 }
 
 var time = new Date();
