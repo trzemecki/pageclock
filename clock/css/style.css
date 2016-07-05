@@ -11,9 +11,9 @@
     bottom: 80px;
     left: 80px;
     margin:0 0 0 -0px;
-    -ms-transform-origin: 0% 90%;
-    -webkit-transform-origin: 0% 90%;
-    transform-origin: 0% 90%;
+    -ms-transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
 }
 
 #clock img.second {
