@@ -9,6 +9,12 @@ function rotation_css(name, start) {
     return "@-moz-keyframes spin_" + name + " {  0% {  -moz-transform: rotate(" + start + "deg) translate(-50%, 20%);  }  100% {  -moz-transform: rotate(" + end + "deg) translate(-50%, 20%);  }  } @-webkit-keyframes spin_" + name + " {  0% {  -webkit-transform: rotate(" + start + "deg) translate(-50%, 20%);  }  100% {  -webkit-transform: rotate(" + end + "deg) translate(-50%, 20%);  }  } @keyframes spin_" + name + " {  0% {  -webkit-transform: rotate(" + start + "deg) translate(-50%, 20%);  transform:rotate(" + start + "deg) translate(-50%, 20%);  }  100% {  -webkit-transform: rotate(" + end + "deg) translate(-50%, 30%);  transform:rotate(" + end + "deg) translate(-50%, 20%);  }  }";
 }
 
+function create_hand(name){
+    element = document.createElement('div');
+    element.className = name;
+    return element;
+}
+ 
 var time = new Date();
 start_hour = time.getHours()
 start_minute = time.getMinutes()
@@ -30,3 +36,7 @@ if (style.styleSheet){
 
 
 document.getElementsByTagName("head")[0].appendChild(style)
+
+document.getElementById('clock').appendChild(create_hand('hour'))
+document.getElementById('clock').appendChild(create_hand('minute'))
+document.getElementById('clock').appendChild(create_hand('second'))
