@@ -7,7 +7,7 @@ PageClock is simple html/css/js project for displaying wall clock on Your pages.
 
 To see sample clock visit project website at: https://trzemecki.github.io/pageclock/
 
-## Instalation
+## Installation
 
 - [download .zip file](https://github.com/trzemecki/pageclock/zipball/master) (or clone repositiory)
 - unzip file inside your website project `<project-dir>/pageclock/`
