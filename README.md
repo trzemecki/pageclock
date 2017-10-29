@@ -1,7 +1,7 @@
 # Pageclock
 *Simple wall clock imitation for website.*
 
-PageClock is simple html/css/js project for displaying wall clock on Your pages.
+PageClock is simple html/css/js project for displaying wall clock on your pages.
 
 ## Project website:
 
