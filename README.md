@@ -11,7 +11,7 @@ To see sample clock visit project website at: https://trzemecki.github.io/pagecl
 
 - [download .zip file](https://github.com/trzemecki/pageclock/zipball/master) (or clone repositiory)
 - unzip file inside your website project `<project-dir>/pageclock/`
-- in Your html file insert in head tag clock style
+- in your html file insert in head tag clock style
 
 ```html
 <link rel="stylesheet" href="<project-dir>/pageclock/themes/orange/style.css">
